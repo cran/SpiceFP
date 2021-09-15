@@ -1,0 +1,31 @@
+
+#' A Sparse and Structured Procedure to Identify Combined Effects of Functional Predictors
+#'
+#' @details The main function of the package is the \code{\link{spicefp}} function. It directly
+#' performs the three main steps of the SpiceFP approach, by using intermediate functions of the package. \cr
+#' 1) At he first step, contingency tables are constructed by
+#' defining joint modalities using class intervals or bins. Several candidate
+#' partitions are then defined.
+#' For each statistical individual \eqn{i} and each candidate partition (denoted \eqn{u} here), the 2 (resp. 3)
+#' functional predictors are transformed into frequency bi(resp. tri)-variate histograms (or contingency tables),
+#' stored as row vectors. The combination of these row vectors for all individuals enables the construction of a
+#' candidate explanatory matrix indexed by \eqn{u} (denoted here \eqn{X^u}).
+#' The function \code{\link{candidates}} is designed to build these candidate matrices. \cr
+#' 2) At the second step, for each candidate explanatory matrix, an edge matrix is defined to
+#' represent the contiguity constraints between modalities of the contingency table. \cr
+#' 3) Finally at the last step, the best class intervals and related
+#' regression coefficients are defined by: i) performing a Generalized Fused Lasso
+#' using each candidate explanatory matrix. The SpiceFP model is the following
+#' \deqn{y_i  = X_i^u \beta^u + \varepsilon_i,}
+#' where \eqn{\beta^u} is the coefficient to be estimated on the 2D (resp. 3D) intervals.
+#' The estimator of \eqn{\beta} is obtained as follows:
+#' \deqn{ \hat{\beta}^{u,\gamma}(\lambda) = argmin \frac{1}{2} \|y - X^u \beta\|_2^2 + \lambda \|D ^{u,\gamma} \beta\|_1,}
+#' where \eqn{\lambda} is a penalty parameter that controls the smoothness of the coefficients, and
+#' \eqn{\gamma} is the ratio between the regularization parameters of parsimony and fusion.
+#' ii) choosing the best candidate matrix
+#' and selecting its variables using an information criterion and checking the
+#' shutdown conditions to stop the approach. Indeed, SpiceFP  may be used in an iterative way. It
+#' therefore allows to identify up to K best candidate matrices and related coefficients.
+#'
+#
+"_PACKAGE"

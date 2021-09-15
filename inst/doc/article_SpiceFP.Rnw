@@ -1,0 +1,9 @@
+\documentclass{article}
+
+\usepackage{pdfpages}
+
+%\VignetteIndexEntry{2021SpiceFP}
+\begin{document}
+\includepdf[pages=-, fitpaper=true]{R_Package_SpiceFP.pdf}
+
+\end{document}
