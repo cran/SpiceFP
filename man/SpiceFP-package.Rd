@@ -6,16 +6,7 @@
 \alias{SpiceFP-package}
 \title{A Sparse and Structured Procedure to Identify Combined Effects of Functional Predictors}
 \description{
-A set of functions allowing to implement the 'SpiceFP' approach 
-  which is iterative. It involves transformation of functional 
-  predictors into several candidate explanatory matrices (based on contingency 
-  tables), to which relative edge matrices with contiguity constraints are 
-  associated. Generalized Fused Lasso regression are performed in order to 
-  identify the best candidate matrix, the best class intervals and related 
-  coefficients at each iteration. The approach is stopped when the maximal number
-  of iterations is reached or when retained coefficients are zeros. Supplementary 
-  functions allow to get coefficients of any candidate matrix or mean of 
-  coefficients of many candidates.
+A set of functions allowing to implement the 'SpiceFP' approach which is iterative. It involves transformation of functional predictors into several candidate explanatory matrices (based on contingency tables), to which relative edge matrices with contiguity constraints are associated. Generalized Fused Lasso regression are performed in order to identify the best candidate matrix, the best class intervals and related coefficients at each iteration. The approach is stopped when the maximal number of iterations is reached or when retained coefficients are zeros. Supplementary functions allow to get coefficients of any candidate matrix or mean of coefficients of many candidates.
 }
 \details{
 The main function of the package is the \code{\link{spicefp}} function. It directly

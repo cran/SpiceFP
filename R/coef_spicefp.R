@@ -117,15 +117,15 @@
 #' g1.y<-as.numeric(colnames(g1))
 #' duration_spc <- Sys.time() - start_time_spc
 #'
-#' library(fields)
-#' plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
-#'      xlab = "Irradiance (mmol/m2/s - Logarithmic scale)",
-#'      ylab = "Temperature (deg C)",log = "x")
-#' rect(min(g1.x),min(g1.y),max(g1.x),max(g1.y), col="black", border=NA)
-#' image.plot(g1.x,g1.y,g1, horizontal = FALSE,
-#'            col=designer.colors(64, c("blue","white")),
-#'            add = TRUE)
-#' axis(1) ; axis(2)
+#' #library(fields)
+#' #plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
+#' #     xlab = "Irradiance (mmol/m2/s - Logarithmic scale)",
+#' #     ylab = "Temperature (deg C)",log = "x")
+#' #rect(min(g1.x),min(g1.y),max(g1.x),max(g1.y), col="black", border=NA)
+#' #image.plot(g1.x,g1.y,g1, horizontal = FALSE,
+#' #           col=designer.colors(64, c("blue","white")),
+#' #           add = TRUE)
+#' #axis(1) ; axis(2)
 #'
 #' ## Let's visualize the same model from other arguments of coef_spicefp
 #' c.crit <- coef_spicefp(ex_sp, iter_=1,
@@ -135,14 +135,14 @@
 #' g2<-c.crit$coef.list$'231'$Candidate.coef.NA.finemeshed
 #' g2.x<-as.numeric(rownames(g2))
 #' g2.y<-as.numeric(colnames(g2))
-#' plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
-#'      xlab = "Irradiance (mmol/m2/s - Logarithmic scale)",
-#'      ylab = "Temperature (deg C)",log = "x")
-#' rect(min(g2.x),min(g2.y),max(g2.x),max(g2.y), col="black", border=NA)
-#' image.plot(g2.x,g2.y,g2, horizontal = FALSE,
-#'            col=designer.colors(64, c("blue","white")),
-#'            add = TRUE)
-#' axis(1) ; axis(2)
+#' #plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
+#' #     xlab = "Irradiance (mmol/m2/s - Logarithmic scale)",
+#' #     ylab = "Temperature (deg C)",log = "x")
+#' #rect(min(g2.x),min(g2.y),max(g2.x),max(g2.y), col="black", border=NA)
+#' #image.plot(g2.x,g2.y,g2, horizontal = FALSE,
+#' #           col=designer.colors(64, c("blue","white")),
+#' #           add = TRUE)
+#' #axis(1) ; axis(2)
 #' closeAllConnections()
 #'
 #'}

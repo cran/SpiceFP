@@ -1,8 +1,8 @@
 
 #' hist_2d
 #'
-#' This function results from a modification of the
-#' \code{\link[gplots:hist2d]{hist2d}} function of the gplots package in order
+#' This function results from a modification of the hist2d
+#' function of the gplots package in order
 #' to build the 2D histogram with breaks directly provided as inputs of the
 #' new function. 
 #'

@@ -93,15 +93,15 @@ g3.x<-as.numeric(rownames(g3))
 g3.y<-as.numeric(colnames(g3))
 
 
-library(fields)
-plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
-     xlab = "Irradiance (mmol/m2/s - Logarithmic scale)",
-     ylab = "Temperature (deg C)",log = "x")
-rect(min(g3.x),min(g3.y),max(g3.x),max(g3.y), col="black", border=NA)
-image.plot(g3.x,g3.y,g3, horizontal = FALSE,
-           col=designer.colors(256, c("blue","white","red")),
-           add = TRUE)
-axis(1) ; axis(2)
+#library(fields)
+#plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
+#     xlab = "Irradiance (mmol/m2/s - Logarithmic scale)",
+#     ylab = "Temperature (deg C)",log = "x")
+#rect(min(g3.x),min(g3.y),max(g3.x),max(g3.y), col="black", border=NA)
+#image.plot(g3.x,g3.y,g3, horizontal = FALSE,
+#           col=designer.colors(256, c("blue","white","red")),
+#           add = TRUE)
+#axis(1) ; axis(2)
 
 closeAllConnections()
 

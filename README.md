@@ -30,7 +30,7 @@ install_github("giraultg/SpiceFP", build_vignettes=TRUE)
 Once the package is installed on your computer, it can be loaded into a R session:
 
 ```R
-library(spiceFP)
+library(SpiceFP)
 help(package="SpiceFP")
 ```
 
@@ -39,12 +39,12 @@ help(package="SpiceFP")
 As a lot of time and effort were spent in creating the **SpiceFP** method, 
 please cite it when using it for data analysis:
 
-https://hal.archives-ouvertes.fr/hal-03298977
+METHODO PAPER CITATION IS COMING SOON.
 
 You should also cite the **SpiceFP** package:
 
 ```R
-citation("spiceFP")
+citation("SpiceFP")
 ```
 
 See also citation() for citing R itself.

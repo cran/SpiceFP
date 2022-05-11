@@ -233,15 +233,15 @@ g<-ex_sp$spicefp.coef
 g.x<-as.numeric(rownames(g))
 g.y<-as.numeric(colnames(g))
 
-library(fields)
-plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
-     xlab = "Irradiance (mmol/m²/s - Logarithmic scale)",
-     ylab = "Temperature (°C)",log = "x")
-rect(min(g.x),min(g.y),max(g.x),max(g.y), col="black", border=NA)
-image.plot(g.x,g.y,g, horizontal = FALSE,
-           col=designer.colors(256, c("blue","white","red")),
-           add = TRUE)
-axis(1) ; axis(2)
+#library(fields)
+#plot(c(10,2000),c(15,45),type= "n", axes = FALSE,
+#     xlab = "Irradiance (mmol/m²/s - Logarithmic scale)",
+#     ylab = "Temperature (°C)",log = "x")
+#rect(min(g.x),min(g.y),max(g.x),max(g.y), col="black", border=NA)
+#image.plot(g.x,g.y,g, horizontal = FALSE,
+#           col=designer.colors(256, c("blue","white","red")),
+#           add = TRUE)
+#axis(1) ; axis(2)
 
 closeAllConnections()
 

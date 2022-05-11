@@ -66,7 +66,7 @@
 #' @importFrom foreach foreach %dopar%
 #' @importFrom stringr str_c
 #' @importFrom parallel detectCores
-#' @importFrom tidyr spread_
+#' @importFrom tidyr spread
 #'
 #' @examples 
 #' ##linbreaks: a function allowing to obtain equidistant breaks
@@ -171,7 +171,7 @@ res<-foreach(m=1:nmat) %dopar% {
     }
 
     # Transform the array into a matrix (ncol(fp1) x (length(bins1) x length(bins2)))
-    n_nvvar<-spread_(as.data.frame.table(ht_ind), "Var1", "Freq")
+    n_nvvar<-spread(as.data.frame.table(ht_ind), "Var1", "Freq")
     rownames(n_nvvar)<-str_c(n_nvvar$Var2,"_",n_nvvar$Var3)
     list(
       assign(paste0("CM",m), base::scale(t(n_nvvar[,c(3:ncol(n_nvvar))]),
@@ -194,7 +194,7 @@ res<-foreach(m=1:nmat) %dopar% {
                             breaks_z=breaks3)$Hist.Values
     }
     # Transform the array into a matrix (ncol(fp1) x (length(bins1) x length(bins2) x length(bins3)))
-    n_nvvar<-spread_(as.data.frame.table(ht_ind), "Var1", "Freq")
+    n_nvvar<-spread(as.data.frame.table(ht_ind), "Var1", "Freq")
     rownames(n_nvvar)<-str_c(n_nvvar$Var2,"_",n_nvvar$Var3,"_",n_nvvar$Var4)
     list(
       assign(paste0("CM",m), scale(t(n_nvvar[,c(4:ncol(n_nvvar))]),
