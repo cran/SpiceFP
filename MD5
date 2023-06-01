@@ -1,4 +1,4 @@
-5973189eee128928ffe1bc47f1a844fe *DESCRIPTION
+643f295b71b764cd3553c248740daafe *DESCRIPTION
 5600d608400b25c18d6f7b74112d30d3 *NAMESPACE
 2c4b1848486878cc2f840dbef434188f *R/FerariIndex_Difference.R
 3e91b75014d6c54e3f853d5eb81fa3bf *R/Irradiance.R
@@ -16,15 +16,15 @@ a41fec7d1b655eb0fe551f9a3e378e78 *R/finemeshed3d.R
 95f491c9c27964baa7bbe636a10e2454 *R/meancoef.R
 a9404bbbb003898fca3383b1288936d8 *R/spicefp.R
 acfd3fae68cb56301d0c3983b4317bd0 *README.md
-93736ac6861f3a3a430d43d5c3c9c711 *build/vignette.rds
+a0ee644fdc7dde96cb55d7b8d8b52408 *build/vignette.rds
 377cd33fb046ca89dd2297729979ae44 *data/FerariIndex_Difference.rda
 378c616b7310bab25ab258096680c2d7 *data/Irradiance.rda
 3bd4cb8ff0d16953fa8c95039596adf5 *data/Temperature.rda
 ae8b4334c74ff8ddfd0dd16ab2df5c81 *inst/doc/article_SpiceFP.Rnw
-459df537f9a08b1e2823b1d6ba0d7671 *inst/doc/article_SpiceFP.pdf
+4e2908dc2fa72f6bb2530fbd3163d75c *inst/doc/article_SpiceFP.pdf
 24930f46304a7400be9cc736d89819da *man/FerariIndex_Difference.Rd
 3ac3a0fbbea0783b907fbfbb34934665 *man/Irradiance.Rd
-8f3ee591c96d3a283af81f5f8367ee67 *man/SpiceFP-package.Rd
+4bd268206a7845d247735bd88a7ecb79 *man/SpiceFP-package.Rd
 0f4398a99e3247bb102b68a94299eeb7 *man/Temperature.Rd
 8b319e285b657e94dcd14768dee1b956 *man/candidates.Rd
 1c32fe81bb3797768f64bd5fe7f73a74 *man/coef_spicefp.Rd
